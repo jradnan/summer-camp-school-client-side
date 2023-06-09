@@ -1,28 +1,28 @@
 html {
     width: 100%;
     height: 100%;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: sans-serif;
-  }
-  
-  #root {
+}
+
+#root {
     width: 100%;
     height: 100%;
-  }
-  
-  .hero-slider-overlay {
+}
+
+.hero-slider-overlay {
     color: black;
     background-color: rgba(0, 0, 0, 0.15);
-  }
+}
 
 
-  .Container {
+.Container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,5 +33,22 @@ html {
     padding: 0;
     pointer-events: none;
     color: aliceblue;
-  }
-  
+}
+
+
+.title {
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.subtitle {
+    margin: 24px auto 0;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    font-size: 1.75rem;
+}

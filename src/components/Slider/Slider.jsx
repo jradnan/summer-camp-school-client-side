@@ -5,7 +5,7 @@ import HeroSlider, { Overlay, Slide, MenuNav } from "hero-slider";
 
 const bogliasco = "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554207609132-H6TFZP8IGL0LD0KIW0C6/P4050102_2000px-60.jpg?format=1500w";
 const countyClare = "https://images.unsplash.com/photo-1620693778087-2bced33a4a06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80";
-const craterRock = "https://images.unsplash.com/photo-1604430456280-43f652c497aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80";
+const craterRock = "https://images.unsplash.com/photo-1586783509992-bcfa7fe443b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
 const giauPass = "https://images.unsplash.com/photo-1533091090875-1ff4acc497dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80";
 
 const Slider = () => {
@@ -35,9 +35,9 @@ const Slider = () => {
 
                     <div className="Container">
 
-                        <h1>Basic Title</h1>
+                        <h1 className='title'>Basic Title</h1>
 
-                        <h2>
+                        <h2 className='subtitle'>
                             Check out the documentation for more advanced examples.
                         </h2>
                     </div>

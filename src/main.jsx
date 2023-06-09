@@ -9,31 +9,36 @@ import {
 import Home from './components/Home/Home.jsx';
 import Instructors from './components/Intructors/Instructors.jsx';
 import Classes from './components/Classes/Classes.jsx';
+import Error from './components/404/Error.jsx';
+import AuthProvider from './components/providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    children:[
+    errorElement: <Error></Error>,
+    children: [
       {
-        path:'/',
-        element:<Home></Home>
+        path: '/',
+        element: <Home></Home>
       },
       {
-        path:'instructors',
-        element:<Instructors></Instructors>
+        path: 'instructors',
+        element: <Instructors></Instructors>
       },
       {
-        path:'classes',
-        element:<Classes></Classes>
+        path: 'classes',
+        element: <Classes></Classes>
       },
-     
+
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
