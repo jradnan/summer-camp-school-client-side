@@ -45,21 +45,20 @@ const Navbar = () => {
                     <li><Link to={'/instructors'}>Instructors</Link></li>   
                     <li><Link to={'/classes'}>Classes</Link></li>
                    <li> <Link to={'/'}>Dashboard</Link></li>
-                   {
+                </ul>
+            </div>
+            <div className="navbar-end mr-5">
+            {
                             user ? <>
-                                <li> <span>{user?.displayName}</span></li>
+                               
                                <div className='flex items-center'>
                                <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
                                 <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
                                </div>
                             </> : <>
-                                <li><Link to="/login">Login</Link></li>
+                               <Link to="/login">Login</Link>
                             </>
                         }
-                </ul>
-            </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
             </div>
         </div>
     );
