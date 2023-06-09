@@ -18,6 +18,7 @@ const SignUp = () => {
                     .then(() => {
                     })
                     .catch(error => console.log(error))
+                    reset()
                 navigate('/');
             })
     };
