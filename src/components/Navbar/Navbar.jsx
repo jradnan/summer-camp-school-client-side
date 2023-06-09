@@ -10,7 +10,7 @@ const Navbar = () => {
             .catch(error => console.log(error));
     }
     return (
-        <div className="navbar bg-base-100  ">
+        <div className="navbar bg-base-100 fixed z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,8 +25,7 @@ const Navbar = () => {
                             user ? <>
                                 <li> <span>{user?.displayName}</span></li>
                                <div className='flex items-center'>
-                               <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
-                                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+                                <button onClick={handleLogOut} className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-1">LogOut</button>
                                </div>
                             </> : <>
                                 <li><Link to="/login">Login</Link></li>
@@ -36,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">
 
-                    <img width={300} src="https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1596185648217-K25J8AHAUT1SS0ZBD2XT/The-school-of-photography-web-site-logo_1500px.png?format=1500w" alt="" />
+                    <img className="lg:w-[300px] w-[200px]" src="https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1596185648217-K25J8AHAUT1SS0ZBD2XT/The-school-of-photography-web-site-logo_1500px.png?format=1500w" alt="" />
                 </a>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -53,10 +52,10 @@ const Navbar = () => {
                                
                                <div className='flex items-center'>
                                <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
-                                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+                                <button onClick={handleLogOut} className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-5">LogOut</button>
                                </div>
                             </> : <>
-                               <Link to="/login">Login</Link>
+                               <Link to="/login" className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white">Login</Link>
                             </>
                         }
             </div>

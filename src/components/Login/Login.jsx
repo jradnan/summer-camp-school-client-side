@@ -68,18 +68,18 @@ const Login = () => {
         }
 
         return (
-            <div className="mt-[100px]">
-                <div className="card mx-auto mt-16 max-w-sm shadow-2xl bg-base-100">
+            <div className="mt-16 absolute top-12 left-24 lg:left-[550px]">
+                <div className="card mx-auto  max-w-sm shadow-2xl bg-black">
                     <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-white">Email</span>
                             </label>
                             <input type="email" name="email" placeholder="email" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text text-white">Password</span>
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered" />
                             <label className="label">
@@ -93,11 +93,11 @@ const Login = () => {
                     </form>
                     <div className="divider"></div>
                     <div className=" text-center my-5">
-                        <button onClick={handleGoogleSignIn} className="btn btn-circle btn-outline">
+                        <button onClick={handleGoogleSignIn} className="btn text-white btn-circle btn-outline">
                             <FaGoogle></FaGoogle>
                         </button>
                     </div>
-                    <p className='text-center'><small>New Here? <Link to="/signUp">Create an account</Link> </small></p>
+                    <p className='text-center text-white pb-5'><small>New Here? <Link to="/signUp"><span className="text-[#9f2ee5]">Create an account</span></Link> </small></p>
                 </div>
             </div>
         );
