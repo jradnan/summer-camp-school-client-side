@@ -89,7 +89,7 @@ const Login = () => {
                             <FaGoogle></FaGoogle>
                         </button>
                     </div>
-                    <p className='text-center'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                    <p className='text-center'><small>New Here? <Link to="/signUp">Create an account</Link> </small></p>
                 </div>
             </div>
         );

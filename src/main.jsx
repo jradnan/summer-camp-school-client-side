@@ -12,6 +12,7 @@ import Classes from './components/Classes/Classes.jsx';
 import Error from './components/404/Error.jsx';
 import AuthProvider from './components/providers/AuthProvider.jsx';
 import Login from './components/Login/Login.jsx';
+import SignUp from './components/SignUp/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path:'login',
         element:<Login></Login>
+      },
+      {
+        path:'signUp',
+        element:<SignUp></SignUp>
       }
 
     ]
