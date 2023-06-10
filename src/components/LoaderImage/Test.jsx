@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
-import "./LoaderImage.css";
 
 function Test() {
   const row1 = [
@@ -22,7 +21,7 @@ function Test() {
   ];
 
   return (
-    <AppContainer className="">
+    <AppContainer >
       <Wrapper>
         <Text>With Great Outcomes.</Text>
         <Note>Our students have gotten offers from awesome companies.</Note>
