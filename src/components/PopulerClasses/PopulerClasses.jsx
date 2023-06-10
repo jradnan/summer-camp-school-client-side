@@ -10,7 +10,6 @@ const PopulerClasses = () => {
         })
     },[])
     const popularClasses = courses;
-    console.log(courses);
     return (
         <div className="my-10">
             <h1 className="text-center text-[30px] md:text-[40px] lg:text-[40px]">Popular Classes</h1>
