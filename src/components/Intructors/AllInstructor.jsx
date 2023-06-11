@@ -5,6 +5,7 @@ const AllInstructor = ({instructor}) => {
     console.log(instructor);
     return (
         <div>
+            
              <div className="courses ">
                 <img src={image} alt="" />
                 <div className="course-info p-5 ">

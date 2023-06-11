@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
-const Navbar = () => {
+const Navbar = ({toggleTheme}) => {
+    console.log(toggleTheme);
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
@@ -10,7 +11,7 @@ const Navbar = () => {
             .catch(error => console.log(error));
     }
     return (
-        <div className="navbar bg-base-100 ">
+        <div className="navbar bg-base-100 fixed z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,7 +34,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">
+                <a className="btn btn-ghost normal-case text-xl ">
 
                     <img className="lg:w-[300px] w-[100px] md:w-[200px]" src="https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1596185648217-K25J8AHAUT1SS0ZBD2XT/The-school-of-photography-web-site-logo_1500px.png?format=1500w" alt="" />
                 </a>
@@ -46,11 +47,11 @@ const Navbar = () => {
                    <li> <Link to={'/'}>Dashboard</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end mr-5">
+            <div className="navbar-end  mr-5">
             {
                             user ? <>
                                
-                               <div className='flex items-center'>
+                               <div className='flex items-center '>
                                <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
                                 <button onClick={handleLogOut} className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-5">LogOut</button>
                                </div>
@@ -58,6 +59,7 @@ const Navbar = () => {
                                <Link to="/login" className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white">Login</Link>
                             </>
                         }
+                          <div className="ml-7 lg:ml-0"> <button className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-5" onClick={toggleTheme}>Theme</button></div>
             </div>
         </div>
     );

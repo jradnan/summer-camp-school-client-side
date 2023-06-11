@@ -13,6 +13,7 @@ import Error from './components/404/Error.jsx';
 import AuthProvider from './components/providers/AuthProvider.jsx';
 import Login from './components/Login/Login.jsx';
 import SignUp from './components/SignUp/SignUp.jsx';
+import ThemeProvider from './components/ThemeProvider/ThemeProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,12 +34,12 @@ const router = createBrowserRouter([
         element: <Classes></Classes>
       },
       {
-        path:'login',
-        element:<Login></Login>
+        path: 'login',
+        element: <Login></Login>
       },
       {
-        path:'signUp',
-        element:<SignUp></SignUp>
+        path: 'signUp',
+        element: <SignUp></SignUp>
       }
 
     ]
@@ -47,8 +48,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-      <RouterProvider router={router} />
-    </AuthProvider>
+    <ThemeProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </ThemeProvider>
   </React.StrictMode>,
 )
