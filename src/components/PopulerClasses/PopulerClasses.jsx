@@ -3,7 +3,7 @@ import SingleClasses from './SingleClasses';
 const PopulerClasses = () => {
     const [courses, setCourses] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/courses')
+        fetch('https://summer-camp-school-server-hq5yhv074-afridimhrj10-gmailcom.vercel.app/courses')
         .then(res => res.json())
         .then(data =>{
             setCourses(data[0].popularClasses);
