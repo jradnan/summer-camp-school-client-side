@@ -2,6 +2,7 @@
     {
         "popularClasses": [
             {
+                "id": 1,
                 "title": "Introduction to Beginners Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213229349-H75AF014C0Q1DHS0QMJJ/Complete+guide+to+Photography+Online+Course+picture?format=300w",
                 "instructor": "S M Imran Hassan",
@@ -10,6 +11,7 @@
                 "students": 250
             },
             {
+                "id": 2,
                 "title": "Wildlife photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/f1957db6-a4a4-470a-87cf-d9f101efebc7/Wildlife+Photography+course_1000px-60-2.jpg?format=300w",
                 "instructor": "GMB Akash",
@@ -18,14 +20,16 @@
                 "students": 200
             },
             {
+                "id": 3,
                 "title": "Landscape Photography Masterclass",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1635686344327-Z99C7TQGJLYS0C4J7RWD/Landscape+photography+course+card_1500px-60.jpg?format=300w",
-                "instructor ": "BIBIN THOTTUNGAL",
+                "instructor": "SK DUKE",
                 "price": 9000,
                 "Available seats": 250,
                 "students": 180
             },
             {
+                "id": 4,
                 "title": "Macro Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1632210371815-JSKKOH9U9KYJTDL9YVQU/Macro+Photography+Course+card?format=300w",
                 "instructor": "Sadman Chowdhury",
@@ -34,6 +38,7 @@
                 "students": 150
             },
             {
+                "id": 5,
                 "title": "Advanced Lighting Techniques",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213353757-1DHWTBJ3FQ5CERMEBK75/Photographer+teaching+Studio+Lighting?format=300w",
                 "instructor": "Sunny Rahman",
@@ -42,6 +47,7 @@
                 "students": 140
             },
             {
+                "id": 6,
                 "title": "Long Exposure Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213289069-AK6DRTH9C8LY6Q34ZHKQ/Long+Exposure+Photography+Online+Course?format=300w",
                 "instructor": "Sakib Malik",
@@ -52,6 +58,7 @@
         ],
         "classes": [
             {
+                "id": 1,
                 "title": "Introduction to Beginners Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213229349-H75AF014C0Q1DHS0QMJJ/Complete+guide+to+Photography+Online+Course+picture?format=300w",
                 "instructor": "S M Imran Hassan",
@@ -60,22 +67,25 @@
                 "students": 250
             },
             {
+                "id": 2,
                 "title": "Wildlife photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/f1957db6-a4a4-470a-87cf-d9f101efebc7/Wildlife+Photography+course_1000px-60-2.jpg?format=300w",
-                "instructor ": "GMB Akash",
+                "instructor": "GMB Akash",
                 "price": 10000,
                 "Available seats": 280,
                 "students": 200
             },
             {
+                "id": 3,
                 "title": "Landscape Photography Masterclass",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1635686344327-Z99C7TQGJLYS0C4J7RWD/Landscape+photography+course+card_1500px-60.jpg?format=300w",
-                "instructor": "BIBIN THOTTUNGAL",
+                "instructor": "SK DUKE",
                 "price": 9000,
                 "Available seats": 250,
                 "students": 180
             },
             {
+                "id": 4,
                 "title": "Macro Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1632210371815-JSKKOH9U9KYJTDL9YVQU/Macro+Photography+Course+card?format=300w",
                 "instructor": "Sadman Chowdhury",
@@ -84,6 +94,7 @@
                 "students": 150
             },
             {
+                "id": 5,
                 "title": "Advanced Lighting Techniques",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213353757-1DHWTBJ3FQ5CERMEBK75/Photographer+teaching+Studio+Lighting?format=300w",
                 "instructor": "Sunny Rahman",
@@ -92,6 +103,7 @@
                 "students": 140
             },
             {
+                "id": 6,
                 "title": "Long Exposure Photography Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213289069-AK6DRTH9C8LY6Q34ZHKQ/Long+Exposure+Photography+Online+Course?format=300w",
                 "instructor": "Sakib Malik",
@@ -100,6 +112,7 @@
                 "students": 120
             },
             {
+                "id": 7,
                 "title": "Photoshop Course for Photographers",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1627466369710-UW5YLG25TWC80PE77ARV/Photoshop+Course+for+Photographers+-+Course+card?format=300w",
                 "instructor": "Daniel Lee",
@@ -108,15 +121,17 @@
                 "students": 110
             },
             {
+                "id": 8,
                 "title": "Black and White Photography",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1627466393104-99B15I7S4FE281AEIF15/Lightroom+Course+card?format=300w",
-                "instructor": "SK DUKE",
+                "instructor": "BIBIN THOTTUNGAL",
                 "price": 6800,
                 "Available seats": 160,
                 "students": 100
             },
             {
-                "title": "Fine Art Landscape Photography ",
+                "id": 9,
+                "title": "Fine Art Landscape Photography",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1611746902458-YW3A7G2H3DVCS94XC6ZV/Fine+art+landscape+photography+course+image?format=300w",
                 "instructor": "Robert Jackson",
                 "price": 6600,
@@ -124,6 +139,7 @@
                 "students": 90
             },
             {
+                "id": 10,
                 "title": "Portrait Retouching Course",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1589374731563-PY4U59QPHPPYO5UL2QJE/Portrait+Retouching+Course?format=300w",
                 "instructor": "Sophia Martinez",
@@ -132,6 +148,7 @@
                 "students": 80
             },
             {
+                "id": 11,
                 "title": "Astrophotography Basics",
                 "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213380773-TQT0GKV4AKTT9G6IQKJI/Photography+learning+book?format=300w",
                 "instructor": "William Turner",
@@ -140,10 +157,11 @@
                 "students": 70
             },
             {
+                "id": 12,
                 "title": "Photojournalism Workshop",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213424013-87XJHTGV3GB9WDPFWH3B/Photography+eBook+for+phones%2C+tablets+and+computers?format=300w",
-                "instructor": "Jennifer Adams",
-                "price": 5000,
+                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213424013-87XJHTGV3GB9WDPFWH3B/Photography+eBook+for+phones%2C+iPads+%26+tablets?format=300w",
+                "instructor": "Emily Williams",
+                "price": 5500,
                 "Available seats": 120,
                 "students": 60
             }

@@ -2,131 +2,161 @@
     {
         "popularInstructors": [
             {
+                "id": 1,
                 "name": "S M Imran Hassan",
                 "image": "https://i.ibb.co/3YKTM5q/4.jpg",
                 "students": 250
             },
             {
+                "id": 2,
                 "name": "GMB Akash",
                 "image": "https://i.ibb.co/hgdrkTG/3.jpg",
                 "students": 200
             },
             {
+                "id": 3,
                 "name": "SK DUKE",
                 "image": "https://i.ibb.co/DtTkdhb/1.jpg",
                 "students": 180
             },
             {
+                "id": 4,
                 "name": "Sadman Chowdhury",
                 "image": "https://i.ibb.co/wg25L9x/6.jpg",
                 "students": 150
             },
             {
+                "id": 5,
                 "name": "Sunny Rahman",
                 "image": "https://i.ibb.co/5YQn2yT/5.jpg",
                 "students": 140
             },
             {
+                "id": 6,
                 "name": "Sakib Malik",
                 "image": "https://i.ibb.co/VHD7sjw/2.jpg",
                 "students": 120
             }
         ],
-        "classes": [
+        "instructors": [
             {
+                "id": 1,
                 "title": "Introduction to Beginners Photography Course",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213229349-H75AF014C0Q1DHS0QMJJ/Complete+guide+to+Photography+Online+Course+picture?format=300w",
-                "instructor": "S M Imran Hassan",
+                "image": "https://i.ibb.co/3YKTM5q/4.jpg",
+                "instructorName": "S M Imran Hassan",
                 "price": 12000,
                 "availableSeats": 350,
+                "email":"smimran@gmail.com",
                 "students": 250
             },
             {
+                "id": 2,
                 "title": "Wildlife Photography Course",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/f1957db6-a4a4-470a-87cf-d9f101efebc7/Wildlife+Photography+course_1000px-60-2.jpg?format=300w",
-                "instructor": "GMB Akash",
+                "image": "https://i.ibb.co/hgdrkTG/3.jpg",
+                "instructorName": "GMB Akash",
                 "price": 10000,
                 "availableSeats": 280,
+                "email":"gmbaksh@gmail.com",
                 "students": 200
             },
             {
+                "id": 3,
                 "title": "Landscape Photography Masterclass",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1635686344327-Z99C7TQGJLYS0C4J7RWD/Landscape+photography+course+card_1500px-60.jpg?format=300w",
-                "instructor": "BIBIN THOTTUNGAL",
+                "image": "https://i.ibb.co/DtTkdhb/1.jpg",
+                "instructorName": "SK DUKE",
                 "price": 9000,
                 "availableSeats": 250,
+                "email":"duke@gmail.com",
                 "students": 180
             },
             {
+                "id": 4,
                 "title": "Macro Photography Course",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1632210371815-JSKKOH9U9KYJTDL9YVQU/Macro+Photography+Course+card?format=300w",
-                "instructor": "Sadman Chowdhury",
+                "image": "https://i.ibb.co/wg25L9x/6.jpg",
+                "instructorName": "Sadman Chowdhury",
                 "price": 8500,
                 "availableSeats": 240,
+                "email":"sadman@gmail.com",
                 "students": 150
             },
             {
+                "id": 5,
                 "title": "Advanced Lighting Techniques",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213353757-1DHWTBJ3FQ5CERMEBK75/Photographer+teaching+Studio+Lighting?format=300w",
-                "instructor": "Sunny Rahman",
+                "image": "https://i.ibb.co/5YQn2yT/5.jpg",
+                "instructorName": "Sunny Rahman",
                 "price": 8000,
                 "availableSeats": 200,
+                "email":"sunny@gmail.com",
                 "students": 140
             },
             {
+                "id": 6,
                 "title": "Long Exposure Photography Course",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213289069-AK6DRTH9C8LY6Q34ZHKQ/Long+Exposure+Photography+Online+Course?format=300w",
-                "instructor": "Sakib Malik",
+                "image": "https://i.ibb.co/VHD7sjw/2.jpg",
+                "instructorName": "Sakib Malik",
                 "price": 7000,
                 "availableSeats": 180,
+                "email":"malik@gmail.com",
                 "students": 120
             },
             {
+                "id": 7,
                 "title": "Photoshop Course for Photographers",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1627466369710-UW5YLG25TWC80PE77ARV/Photoshop+Course+for+Photographers+-+Course+card?format=300w",
-                "instructor": "Daniel Lee",
+                "image": "https://i.ibb.co/QCKxHtN/7.jpg",
+                "instructorName": "Daniel Lee",
                 "price": 6900,
                 "availableSeats": 170,
+                "email":"lee@gmail.com",
                 "students": 110
             },
             {
+                "id": 8,
                 "title": "Black and White Photography",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1627466393104-99B15I7S4FE281AEIF15/Lightroom+Course+card?format=300w",
-                "instructor": "SK DUKE",
+                "image": "https://i.ibb.co/4KgKkyR/Untitled-design.jpg",
+                "instructorName": "BIBIN THOTTUNGAL",
                 "price": 6800,
                 "availableSeats": 160,
+                "email":"bibin@gmail.com",
                 "students": 100
             },
             {
+                "id": 9,
                 "title": "Fine Art Landscape Photography",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1611746902458-YW3A7G2H3DVCS94XC6ZV/Fine+art+landscape+photography+course+image?format=300w",
-                "instructor": "Robert Jackson",
+                "image": "https://i.ibb.co/rHYgSrf/Untitled-design.jpg",
+                "instructorName": "Robert Jackson",
                 "price": 6600,
                 "availableSeats": 150,
+                "email":"robert@gmail.com",
                 "students": 90
             },
             {
+                "id": 10,
                 "title": "Portrait Retouching Course",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1589374731563-PY4U59QPHPPYO5UL2QJE/Portrait+Retouching+Course?format=300w",
-                "instructor": "Sophia Martinez",
+                "image": "https://i.ibb.co/Q673XZk/10.jpg",
+                "instructorName": "Sophia Martinez",
                 "price": 6500,
                 "availableSeats": 140,
+                "email":"sophia@gmail.com",
                 "students": 80
             },
             {
+                "id": 11,
                 "title": "Astrophotography Basics",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213380773-TQT0GKV4AKTT9G6IQKJI/Photography+learning+book?format=300w",
-                "instructor": "William Turner",
+                "image": "https://i.ibb.co/zQ3Zd2z/12-2.jpg",
+                "instructorName": "William Turner",
                 "price": 6000,
                 "availableSeats": 130,
+                "email":"none@gmail.com",
                 "students": 70
             },
             {
+                "id": 12,
                 "title": "Photojournalism Workshop",
-                "image": "https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1554213424013-87XJHTGV3GB9WDPFWH3B/Photography+eBook+for+phones%2C+tablets+and+computers?format=300w",
-                "instructor": "Jennifer Adams",
+                "image": "https://i.ibb.co/vdcfsX5/12-1.jpg",
+                "instructorName": "Jennifer Adams",
                 "price": 5000,
                 "availableSeats": 120,
+                "email":"none@gmail.com",
                 "students": 60
             }
         ]
