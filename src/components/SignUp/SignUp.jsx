@@ -66,6 +66,13 @@ const SignUp = () => {
                                 {errors.password?.type === 'pattern' && <p className="text-red-600">Password must have one Uppercase one lower case, one number and one special character.</p>}
                                
                             </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-white">Confirm Password</span>
+                                </label>
+                                <input type="ConfirmPassword"  {...register("confirmPassword", { required: true })} name="confirmPassword" placeholder="Confirm Password" className="input input-bordered" />
+                                {errors.email && <span className="text-red-600">Confirm Password is required</span>}
+                            </div>
                             <div className="form-control mt-6">
                                 <input className="btn bg-[#9f2ee5] text-white" type="submit" value="Sign Up" />
                             </div>

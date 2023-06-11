@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = ({toggleTheme}) => {
-    console.log(toggleTheme);
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
@@ -59,7 +58,7 @@ const Navbar = ({toggleTheme}) => {
                                <Link to="/login" className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white">Login</Link>
                             </>
                         }
-                          <div className="ml-7 lg:ml-0"> <button className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-5" onClick={toggleTheme}>Theme</button></div>
+                          <div className="ml-7 lg:ml-0"> <button className="bg-[#000] py-2 px-3 rounded-3xl text-white ml-5" onClick={toggleTheme}>Theme</button></div>
             </div>
         </div>
     );
