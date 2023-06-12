@@ -1,4 +1,4 @@
-import { FaTrashAlt } from "react-icons/fa";
+import { FaTrashAlt, FaMoneyBill } from "react-icons/fa";
 import useCart from "../../hooks/useCart";
 import Swal from "sweetalert2";
 
@@ -51,6 +51,8 @@ const MySelectedClasses = () => {
                             <th>Price</th>
                             <th>Update</th>
                             <th>Delete</th>
+                            <th>Pay</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -75,9 +77,10 @@ const MySelectedClasses = () => {
                                 <td>
                                     <button className="btn btn-ghost btn-xs">details</button>
                                 </td>
-                                <td>
-                                </td>
-                                <button onClick={() => handleDelete(course)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
+                                
+                               <td> <button onClick={() => handleDelete(course)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button></td>
+                               <td> <button className="btn btn-ghost bg-green-700  text-white"><FaMoneyBill></FaMoneyBill></button></td>
+                           
                             </tr>)
                         }
 
