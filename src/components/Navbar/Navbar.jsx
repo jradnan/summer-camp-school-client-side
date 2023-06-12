@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = ({ toggleTheme }) => {
@@ -17,10 +17,13 @@ const Navbar = ({ toggleTheme }) => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 fixed z-10">
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/instructors'}>Instructors</Link></li>
-                        <li><Link to={'/classes'}>Classes</Link></li>
-                        <li> <Link to={'/'}>Dashboard</Link></li>
+                        <li><NavLink to={'/'}>Home</NavLink></li>
+                        <li><NavLink to={'/instructors'}>Instructors</NavLink></li>
+                        <li><NavLink to={'/classes'}>Classes</NavLink></li>
+                        {user ?
+                            <li> <NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+                            : ""
+                        }
                         {
                             user ? <>
                                 <li> <span>{user?.displayName}</span></li>
@@ -28,7 +31,7 @@ const Navbar = ({ toggleTheme }) => {
                                     <button onClick={handleLogOut} className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-1">LogOut</button>
                                 </div>
                             </> : <>
-                                <li><Link to="/login">Login</Link></li>
+                                <li><NavLink to="/login">Login</NavLink></li>
                             </>
                         }
                     </ul>
@@ -40,12 +43,12 @@ const Navbar = ({ toggleTheme }) => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link to={'/'}>Home</Link></li>
-                    <li><Link to={'/instructors'}>Instructors</Link></li>
-                    <li><Link to={'/classes'}>Classes</Link></li>
-                    {user?
-                        <li> <Link to={'/dashboard'}>Dashboard</Link></li>
-                        :""
+                    <li><NavLink to={'/'}>Home</NavLink></li>
+                    <li><NavLink to={'/instructors'}>Instructors</NavLink></li>
+                    <li><NavLink to={'/classes'}>Classes</NavLink></li>
+                    {user ?
+                        <li> <NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+                        : ""
                     }
                 </ul>
             </div>
@@ -58,7 +61,7 @@ const Navbar = ({ toggleTheme }) => {
                             <button onClick={handleLogOut} className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white ml-5">LogOut</button>
                         </div>
                     </> : <>
-                        <Link to="/login" className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white">Login</Link>
+                        <NavLink to="/login" className="bg-[#9f2ee5] py-2 px-3 rounded-3xl text-white">Login</NavLink>
                     </>
                 }
                 <div className="ml-7 lg:ml-0"> <button className="bg-[#000] py-2 px-3 rounded-3xl text-white ml-5" onClick={toggleTheme}>Theme</button></div>
