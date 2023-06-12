@@ -2,7 +2,6 @@ import { FaBeer, FaUserCircle } from 'react-icons/fa';
 
 const Instructor = ({ instructor }) => {
     const { image, students, name } = instructor;
-    console.log(instructor);
     return (
         <div>
             <div className="courses ">

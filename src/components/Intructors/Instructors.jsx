@@ -13,7 +13,6 @@ const Instructors = () => {
             })
     }, [])
 
-    console.log(allInstructors);
     return (
         <div>
             {isLoading ? (

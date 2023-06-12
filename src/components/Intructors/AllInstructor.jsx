@@ -2,7 +2,6 @@
 const AllInstructor = ({instructor}) => {
     const { image, email, instructorName } = instructor;
 
-    console.log(instructor);
     return (
         <div>
             

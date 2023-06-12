@@ -14,6 +14,18 @@ import AuthProvider from './components/providers/AuthProvider.jsx';
 import Login from './components/Login/Login.jsx';
 import SignUp from './components/SignUp/SignUp.jsx';
 import ThemeProvider from './components/ThemeProvider/ThemeProvider.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import MySelectedClasses from './components/Pages/MySelectedClasses/MySelectedClasses.jsx';
+import MyEnrolledClasses from './components/Pages/MyEnrolledClasses/MyEnrolledClasses.jsx';
+import Payment from './components/Pages/Payment/Payment.jsx';
+import ManageUsers from './components/Admin/ManageUsers.jsx';
+
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+const queryClient = new QueryClient()
+
 
 const router = createBrowserRouter([
   {
@@ -44,13 +56,37 @@ const router = createBrowserRouter([
 
     ]
   },
+  {
+    path: 'dashboard',
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: 'myClasses',
+        element: <MySelectedClasses></MySelectedClasses>
+      },
+      {
+        path: 'myEnrolledClasses',
+        element: <MyEnrolledClasses></MyEnrolledClasses>
+      },
+      {
+        path: 'payment',
+        element: <Payment></Payment>
+      },
+      {
+        path: 'manageUsers',
+        element: <ManageUsers></ManageUsers>
+      }
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider>
       <AuthProvider>
-        <RouterProvider router={router} />
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
       </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>,

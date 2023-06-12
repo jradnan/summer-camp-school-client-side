@@ -1,7 +1,59 @@
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
+import {  useLocation, useNavigate } from "react-router-dom";
 
 const AllClasses = ({course}) => {
-    console.log(course);
-    const { title, image, instructor, availableSeats, price } = course;
+    const { title, image, instructor, availableSeats, price, id } = course;
+    const {user} = useContext(AuthContext)
+    const navigate = useNavigate();
+    const location = useLocation()
+
+
+    const handleAddToCart = cart =>{
+        console.log(cart);
+        if (user && user.email) {
+            const cartItem = { courseItemId: id, title, price, image, email: user.email }
+            fetch('http://localhost:5000/carts', {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(cartItem)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.insertedId) {
+                        console.log(data);
+                        
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Course Added To The cart.',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    }
+
+                    console.log(data);
+                })
+        }
+        else {
+            Swal.fire({
+                title: 'Please login for add to cart',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Login Now'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/login', { state: { from: location } })
+                }
+            })
+        }
+    }
+    
 
     return (
         <div>
@@ -11,7 +63,8 @@ const AllClasses = ({course}) => {
                     <p className="text-[#000] text-[14px] font-[400]">{title}</p>
                     <p className="text-[#000] text-[14px] font-[400]">Instructor: {instructor}</p>
                     <p className="text-[#000] text-[14px] font-[400]">Seats: {availableSeats}</p>
-                    <button className="bg-[#000] mt-3 text-white rounded-2xl px-2 text-[14px] py-1">Price: {price}</button>
+                    <p className="text-[#000] text-[14px] font-[400]">Price: {price}</p>
+                    <button onClick={() => handleAddToCart(course)} className="bg-[#000] mt-3 text-white rounded-2xl px-2 text-[14px] py-1">Add to Cart</button>
                 </div>
             </div>
         </div>

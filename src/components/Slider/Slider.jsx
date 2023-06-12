@@ -11,7 +11,7 @@ const Slider = () => {
     return (
         <div>
 
-            <HeroSlider
+            <HeroSlider 
                 height={"100vh"}
                 autoplay
                 controller={{

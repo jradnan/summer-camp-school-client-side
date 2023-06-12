@@ -46,21 +46,21 @@ const Login = () => {
                 .then(result => {
                     const user = result.user;
                     console.log(user);
-                    // const loggedInUser = result.user;
-                    // const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
-                    // fetch('http://localhost:5000/users', {
-                    //     method: "POST",
-                    //     headers: {
-                    //         'content-type': 'application/json'
-                    //     },
-                    //     body: JSON.stringify(saveUser)
+                    const loggedInUser = result.user;
+                    const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
+                    fetch('http://localhost:5000/users', {
+                        method: "POST",
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(saveUser)
 
-                    // })
-                    // .then(res => res.json())
-                    // .then(() => {
+                    })
+                    .then(res => res.json())
+                    .then(() => {
 
 
-                    // })
+                    })
 
                     navigate(from, { replace: true });
                 })
