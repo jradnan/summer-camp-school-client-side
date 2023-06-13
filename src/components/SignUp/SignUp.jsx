@@ -103,8 +103,8 @@ const SignUp = () => {
                                 <input className="btn bg-[#9f2ee5] text-white" type="submit" value="Sign Up" />
                             </div>
                         </form>
-                        <p className="text-center text-white mb-5"><small>Already have an account <Link to="/login"><span className="text-[#9f2ee5]">Login</span></Link></small></p>
-                                <SocialLogin></SocialLogin>
+                        <SocialLogin></SocialLogin>
+                        <p className="text-center text-white mb-5"><small>Already have an account? <Link to="/login"><span className="text-[#9f2ee5]">Login</span></Link></small></p>
                     </div>
                 </div>
             </div>
