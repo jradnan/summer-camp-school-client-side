@@ -29,7 +29,7 @@ const AllClasses = ({course}) => {
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
-                            title: 'Course Added To The cart.',
+                            title: 'Course Added.',
                             showConfirmButton: false,
                             timer: 1500
                         })
@@ -64,7 +64,7 @@ const AllClasses = ({course}) => {
                     <p className="text-[#000] text-[14px] font-[400]">Instructor: {instructor}</p>
                     <p className="text-[#000] text-[14px] font-[400]">Seats: {availableSeats}</p>
                     <p className="text-[#000] text-[14px] font-[400]">Price: {price}</p>
-                    <button onClick={() => handleAddToCart(course)} className="bg-[#000] mt-3 text-white rounded-2xl px-2 text-[14px] py-1">Add to Cart</button>
+                    <button onClick={() => handleAddToCart(course)} className="bg-[#000] mt-3 text-white rounded-2xl px-2 text-[14px] py-1">Select</button>
                 </div>
             </div>
         </div>
