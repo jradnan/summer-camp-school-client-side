@@ -1,5 +1,13 @@
 ## Live website LINK : https://summer-camp-school-aab5a.web.app
-
+## Used packages/ technology name : 
+* tanstack/react-query
+* axios
+* firebase
+* hero-slider
+* react-awesome-reveal
+* react-router
+* react-hook-form
+* sweetalert2
 ## Project title 
 this is a Summer School Photography Website. 
 
