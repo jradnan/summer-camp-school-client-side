@@ -1,9 +1,11 @@
 ## Live website LINK : https://summer-camp-school-aab5a.web.app
 ## Used packages/ technology name : 
 ## Front End
+* react
+* firebase
+* daisy UI
 * tanstack/react-query
 * axios
-* firebase
 * hero-slider
 * react-awesome-reveal
 * react-router
