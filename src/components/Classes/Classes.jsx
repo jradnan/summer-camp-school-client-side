@@ -11,6 +11,7 @@ const Classes = () => {
             .then(data => {
                 setCourses(data[0].classes);
                 setIsLoading(false);
+                console.log(data[1]);
             })
     }, [])
     return (
@@ -24,6 +25,7 @@ const Classes = () => {
                     ))}
                 </div>
             )}
+
         </div>
     );
 };

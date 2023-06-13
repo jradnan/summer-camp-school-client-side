@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaBackspace, FaTrashAlt, FaHandHolding } from "react-icons/fa";
-
-const ManageClasses = () => {
+const MyClass = () => {
     const [courses, setCourses] = useState([]);
     useEffect(() => {
         fetch('https://summer-camp-school-server-afridimhrj10-gmailcom.vercel.app/classes')
@@ -69,4 +68,4 @@ const ManageClasses = () => {
     );
 };
 
-export default ManageClasses;
+export default MyClass;

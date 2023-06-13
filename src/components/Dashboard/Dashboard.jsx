@@ -6,6 +6,8 @@ import {
     FaPencilRuler,
     FaWallet,
     FaUsers,
+    FaChalkboardTeacher,
+    FaClipboard
 } from "react-icons/fa";
 import { FaAlignJustify } from "react-icons/fa";
 import useAdmin from "../hooks/useAdmin";
@@ -82,7 +84,13 @@ const Dashboard = () => {
                             {isInstructor && (
                                 <li>
                                     <NavLink to={"/dashboard/instructor"}>
-                                        <FaWallet></FaWallet> Instructor
+                                        <FaChalkboardTeacher></FaChalkboardTeacher> Instructor
+                                    </NavLink>
+                                    <NavLink to={"/dashboard/addClass"}>
+                                        <FaClipboard></FaClipboard> Add A Class
+                                    </NavLink>
+                                    <NavLink to={"/dashboard/myClass"}>
+                                        <FaUsers></FaUsers> My Class
                                     </NavLink>
                                 </li>
                             )}
