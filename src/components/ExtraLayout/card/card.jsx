@@ -1,4 +1,4 @@
-import {  FaRegCommentAlt,FaRegHeart } from 'react-icons/fa';
+import { FaRegCommentAlt, FaRegHeart } from 'react-icons/fa';
 
 const Card = () => {
     return (
@@ -13,24 +13,26 @@ const Card = () => {
                         alt="Card Image"
                         className="w-full h-auto"
                     />
+                    <div className='py-10'>
 
-                    {/* Title */}
-                    <h1 className="text-xl font-bold mt-4 text-center px-4">Wishing Well</h1>
+                        {/* Title */}
+                        <h1 className="text-xl font-bold mt-4 text-center px-4">Wishing Well</h1>
 
-                    {/* Subtitle */}
-                    <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">January 28, 2022</h5>
+                        {/* Subtitle */}
+                        <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">January 28, 2022</h5>
 
-                    {/* Text */}
-                    <p className="mt-2 text-center px-4">
-                        Some text describing the content of the card. This can be a longer description or any other relevant information.
-                    </p>
+                        {/* Text */}
+                        <p className="mt-2 text-center px-4">
+                            Some text describing the content of the card. This can be a longer description or any other relevant information.
+                        </p>
+                    </div>
 
                     {/* Footer */}
                     <div className="flex justify-between mt-3 px-4 py-2 border-t-2 border-[#243c5a]">
                         <a href="#" className="text-[#C28D4A] flex items-center ">
                             <FaRegHeart></FaRegHeart>
                             <h5 className='text-white ml-2'>230 Likes</h5>
-                           
+
                         </a>
                         <a href="#" className="text-[#C28D4A] flex items-center">
                             <FaRegCommentAlt></FaRegCommentAlt>
@@ -47,24 +49,26 @@ const Card = () => {
                         alt="Card Image"
                         className="w-full h-auto"
                     />
+                    <div className='py-10'>
 
-                    {/* Title */}
-                    <h1 className="text-xl font-bold mt-4 text-center px-4">Johnny B Goode</h1>
+                        {/* Title */}
+                        <h1 className="text-xl font-bold mt-4 text-center px-4">Johnny B Goode</h1>
 
-                    {/* Subtitle */}
-                    <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">July 28, 2022</h5>
+                        {/* Subtitle */}
+                        <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">July 28, 2022</h5>
 
-                    {/* Text */}
-                    <p className="mt-2 text-center px-4">
-                        Some text describing the content of the card. This can be a longer description or any other relevant information.
-                    </p>
+                        {/* Text */}
+                        <p className="mt-2 text-center px-4">
+                            Some text describing the content of the card. This can be a longer description or any other relevant information.
+                        </p>
+                    </div>
 
                     {/* Footer */}
                     <div className="flex justify-between mt-3 px-4 py-2 border-t-2 border-[#243c5a]">
                         <a href="#" className="text-[#C28D4A] flex items-center ">
                             <FaRegHeart></FaRegHeart>
                             <h5 className='text-white ml-2'>152 Likes</h5>
-                           
+
                         </a>
                         <a href="#" className="text-[#C28D4A] flex items-center">
                             <FaRegCommentAlt></FaRegCommentAlt>
@@ -81,24 +85,26 @@ const Card = () => {
                         alt="Card Image"
                         className="w-full h-auto"
                     />
+                    <div className='py-10'>
 
-                    {/* Title */}
-                    <h1 className="text-xl font-bold mt-4 text-center px-4">One</h1>
+                        {/* Title */}
+                        <h1 className="text-xl font-bold mt-4 text-center px-4">One</h1>
 
-                    {/* Subtitle */}
-                    <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">September 28, 2022</h5>
+                        {/* Subtitle */}
+                        <h5 className="text-sm font-semibold text-[#C28D4A] mt-2 text-center px-4">September 28, 2022</h5>
 
-                    {/* Text */}
-                    <p className="mt-2 text-center px-4">
-                        Some text describing the content of the card. This can be a longer description or any other relevant information.
-                    </p>
+                        {/* Text */}
+                        <p className="mt-2 text-center px-4">
+                            Some text describing the content of the card. This can be a longer description or any other relevant information.
+                        </p>
+                    </div>
 
                     {/* Footer */}
                     <div className="flex justify-between mt-3 px-4 py-2 border-t-2 border-[#243c5a]">
                         <a href="#" className="text-[#C28D4A] flex items-center ">
                             <FaRegHeart></FaRegHeart>
                             <h5 className='text-white ml-2'>257 Likes</h5>
-                           
+
                         </a>
                         <a href="#" className="text-[#C28D4A] flex items-center">
                             <FaRegCommentAlt></FaRegCommentAlt>
