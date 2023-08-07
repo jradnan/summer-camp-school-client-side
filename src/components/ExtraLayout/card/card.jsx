@@ -4,7 +4,7 @@ const Card = () => {
     return (
         <div>
             <h1 className='text-4xl my-10 text-center'>Blog</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:px-24 md:gap-10 lg:gap-0">
+            <div className=" p-10 lg:p-20 md:p-20 lg:mx-12 lg:gap-6  grid md:grid-cols-2 lg:grid-cols-3">
                 {/* Card 1 */}
                 <div className="max-w-sm rounded-lg overflow-hidden bg-black text-white">
                     {/* Image */}
