@@ -1,6 +1,8 @@
 import Extra from "../ExtraLayout/Extra";
+import TestimonialSlider from "../ExtraLayout/Testimonial/TestimonialSlider";
 import AboutSection from "../ExtraLayout/about/AboutSection";
 import Card from "../ExtraLayout/card/card";
+
 import Test from "../LoaderImage/Test";
 import PopulerInstructors from "../PopularIntructors/PopulerInstructors";
 import PopulerClasses from "../PopulerClasses/PopulerClasses";
@@ -16,6 +18,7 @@ const Home = () => {
             <Extra></Extra>
             <Card></Card>
             <AboutSection></AboutSection>
+            <TestimonialSlider></TestimonialSlider>
             <Test></Test>
            
         </div>

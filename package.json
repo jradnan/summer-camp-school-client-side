@@ -30,6 +30,8 @@
     "react-marquee-slider": "^1.1.5",
     "react-router-dom": "^6.12.0",
     "react-sizeme": "^3.0.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0",
     "sweetalert2": "^11.7.12",
     "swiper": "^9.3.2"
