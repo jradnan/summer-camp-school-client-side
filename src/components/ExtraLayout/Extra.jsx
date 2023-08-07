@@ -3,7 +3,7 @@ const Extra = () => {
     return (
         <div>
             <h1 className='text-4xl text-center my-10'>Gallery</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                 <div className="relative overflow-hidden rounded-lg transition-all transform-gpu hover:scale-105 hover:duration-1000">
                     <img
                         src="https://themes-themegoods.b-cdn.net/titan/demo/wp-content/uploads/2013/06/5342548089_6f7063ee53_o_copy.jpg"

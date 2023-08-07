@@ -6,15 +6,10 @@ const AboutSection = () => {
       <div className="lg:w-1/2 lg:mr-8">
         <h2 className="text-3xl font-semibold mb-4">About Us</h2>
         <p className="text-gray-700 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis enim ut
-          purus convallis feugiat. Sed aliquam velit nec nunc rhoncus bibendum. Fusce interdum
-          elit mauris, et scelerisque mauris fermentum vel. Integer laoreet est nec est
-          tristique, ac convallis nisi accumsan.
+        Welcome to our Summer School of Photography! We believe that capturing the essence of the world through the lens is a transformative experience. Our program is designed to nurture your passion for photography and equip you with the skills to master the art.
         </p>
         <p className="text-gray-700">
-          Proin vulputate felis ut lacus bibendum vestibulum. Nunc id ante quis sapien
-          interdum accumsan eget at augue. Vivamus nec congue est. Nullam vehicula diam
-          felis, a elementum sapien fringilla ac. Ut id tincidunt magna.
+        Through hands-on workshops and interactive sessions, you'll learn to capture breathtaking landscapes, candid moments, and creative portraits. Join our community of aspiring photographers, and together, we'll explore the beauty of the world through the magic of photography. So grab your camera and let your artistic vision soar this summer!
         </p>
       </div>
 
