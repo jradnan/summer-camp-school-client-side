@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <div className="py-12 text-center">
+        <div className="py-12 text-center border-t-2">
             <h1 className="lg:text-7xl md:text-7xl">School Of Photography</h1>
             <p className="text-[20px]">ALL Rights Reserved</p>
             <div className="flex justify-center items-center mt-7 gap-4">
