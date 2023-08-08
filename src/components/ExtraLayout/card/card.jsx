@@ -3,7 +3,7 @@ import { FaRegCommentAlt, FaRegHeart } from 'react-icons/fa';
 const Card = () => {
     return (
         <div>
-            <h1 className='text-4xl my-10 text-center'>Blog</h1>
+            <h1 className='text-4xl mt-20 text-center'>Blog</h1>
             <div className=" p-10 lg:p-20 md:p-20 lg:mx-12 lg:gap-6  grid md:grid-cols-2 lg:grid-cols-3">
                 {/* Card 1 */}
                 <div className="max-w-sm rounded-lg overflow-hidden bg-black text-white">
