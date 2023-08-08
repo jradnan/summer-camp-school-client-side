@@ -41,7 +41,7 @@ const Navbar = ({ toggleTheme }) => {
                     <img className="lg:w-[300px] w-[100px] md:w-[200px]" src="https://images.squarespace-cdn.com/content/v1/5824673c2e69cfc8ac1e3cd3/1596185648217-K25J8AHAUT1SS0ZBD2XT/The-school-of-photography-web-site-logo_1500px.png?format=1500w" alt="" />
                 </a>
             </div>
-            <div className="navbar-center  lg:flex">
+            <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><NavLink to={'/'}>Home</NavLink></li>
                     <li><NavLink to={'/instructors'}>Instructors</NavLink></li>
