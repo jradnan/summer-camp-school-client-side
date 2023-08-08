@@ -36,7 +36,7 @@ const TestimonialSlider = () => {
   return (
     <div>
       <h1 className='text-4xl text-center mt-10'>Testimonial</h1>
-      <div className="w-full mx-auto relative p-8 md:p-16 lg:p-24 bg-[#1abc9c] mt-6">
+      <div className="w-full mx-auto relative p-8 md:p-16  bg-gradient-to-r from-indigo-500 via-purple-500 to-green-400  mt-6">
         {testimonialData.map((testimonial, index) => (
           <div
             key={testimonial.id}
@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
           >
             <div className="flex flex-col md:flex-row items-center md:space-x-8 transform transition-transform">
               {/* Image */}
-              <div className="w-full md:w-1/2 p-4">
+              <div className="w-full md:w-1/2 p-">
                 <img src={testimonial.image} alt={testimonial.name} className="rounded-lg mx-auto md:mx-0" />
               </div>
               {/* Testimonial Text */}
